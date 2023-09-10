@@ -61,7 +61,7 @@
     padding-bottom: 128px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -83,17 +83,18 @@
         padding: 32px;
     }
 
-    &__1 {
+    &__img {
+        &_1 {
 
-        background-image: url(./play/play_1.jpg);
+            background-image: url(./img_play/play_1.jpg);
+        }
+
+        &_2 {
+            background-image: url(./img_play/play_2.jpg);
+        }
+
+        &_3 {
+            background-image: url(./img_play/play_3.jpg);
+        }
     }
-
-    &__2 {
-        background-image: url(./play/play_2.jpg);
-    }
-
-    &__3 {
-        background-image: url(./play/play_3.jpg);
-    }
-
 }

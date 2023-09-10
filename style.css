@@ -56,7 +56,7 @@
   padding-bottom: 128px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 32px;
 }
 
@@ -77,12 +77,12 @@
 .play__name {
   padding: 32px;
 }
-.play__1 {
-  background-image: url(./play/play_1.jpg);
+.play__img_1 {
+  background-image: url(./img_play/play_1.jpg);
 }
-.play__2 {
-  background-image: url(./play/play_2.jpg);
+.play__img_2 {
+  background-image: url(./img_play/play_2.jpg);
 }
-.play__3 {
-  background-image: url(./play/play_3.jpg);
-}/*# sourceMappingURL=hw-1.css.map */
+.play__img_3 {
+  background-image: url(./img_play/play_3.jpg);
+}/*# sourceMappingURL=style.css.map */

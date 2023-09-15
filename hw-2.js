@@ -17,20 +17,20 @@ alert(guru);
 
 // Задание 4
 
-let x = Number(10);
-let y = Number(2);
+let x = 10;
+let y = 2;
 alert(`сумма ${x + y}, разность ${x - y}, произведение ${x * y}, частное ${x / y}`);
 
 // Задание 5
 
-let z = Number(2);
+let z = 2;
 let result = z ** 5;
 alert(result);
 
 // Задание 6
 
-let c = Number(9);  //пришлось изменить имя переменной т.к. такое уже использовалось в задании 1
-let b = Number(2);
+let c = 9;  //пришлось изменить имя переменной т.к. такое уже использовалось в задании 1
+let b = 2;
 let mod = c % b;
 alert(mod);
 
@@ -47,19 +47,19 @@ alert(num);
 
 // Задание 8
 
-let age = Number(prompt('Сколько вам лет?'));
+let age = (prompt('Сколько вам лет?'));
 alert(age);
 
 // Задание 9.0
 
 let name = 'Вася';
-let age2 = Number(0); // пришлось изменить имя переменной т.к. такое уже использовалось в задании 8
-let isAdmin = Boolean(1);
+let age2 = 0; // пришлось изменить имя переменной т.к. такое уже использовалось в задании 8
+let isAdmin = true;
 
 let user = {
     name: 'Василий',
     age2: 25,
-    isAdmin: Boolean(1)
+    isAdmin: true
 }
 console.log(user);
 

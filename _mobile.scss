@@ -1,0 +1,52 @@
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        height: 735px;
+
+        &__header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 239px;
+            align-items: center;
+            gap: 32px;
+        }
+
+        &__title {
+            font-size: 32px;
+            width: 343px;
+            flex-shrink: 0;
+            padding-top: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+            margin-bottom: 0px;
+        }
+
+    }
+
+    .play {
+        width: 343px;
+
+        &__name {
+            padding: 32px 14px;
+        }
+    }
+    
+
+
+
+
+
+}

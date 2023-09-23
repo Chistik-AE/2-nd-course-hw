@@ -1,23 +1,22 @@
 // Задание  1
 
-const smallerNumber = () => {
-    let a = prompt('Введите первое число');
-    let b = prompt('Введите второе число');
+const smallerNumber = (a, b) => {
+
     if (a > b) {
-        return console.log(b);
+        return b;
     }
     else {
-        return console.log(a);
+        return a;
     };
 }
 
-smallerNumber();
+console.log(smallerNumber(8, 7));
+
 
 // Задание  2
 
-const evenNumber = () => {
-    let c = prompt('Введите число');
-    if ((c % 2) == 0) {
+const evenNumber = (c) => {
+    if ((c % 2) === 0) {
         console.log('Число чётное');
     }
     else {
@@ -26,7 +25,7 @@ const evenNumber = () => {
 
 };
 
-evenNumber();
+evenNumber(8);
 
 // Задание  3
 
@@ -35,21 +34,21 @@ const numberSquared = (d) => {
 };
 
 const numberSquared2 = (e) => {
-    return console.log(e ** 2)
+    return e ** 2
 };
 
 numberSquared(6);
-numberSquared2(7);
+console.log(numberSquared2(7));
 
 // Задание  4
 
 const userAge = () => {
-    f = prompt('Сколько вам лет?');
+    let f = prompt('Сколько вам лет?');
     if (f > 12) {
         alert('Добро пожаловать!');
     }
     else {
-        if (f < 0) {
+        if (f < 0 || isNaN(f) || f == undefined || f.trim() === '') {
             alert('Вы ввели неправильное значение');
         }
         else {
@@ -65,11 +64,11 @@ userAge();
 const correctNumber = () => {
     let g = prompt('Введите первое число');
     let h = prompt('Введите второе число');
-    if (isNaN(g) || g === '') {
+    if (isNaN(g) || g == undefined || g.trim() === '') {
         return console.log('Одно или оба значения не являются числом');
     }
     else {
-        if (isNaN(h) || h === '') {
+        if (isNaN(h) || h == undefined || h.trim() === '') {
             return console.log('Одно или оба значения не являются числом');
         }
         else {
@@ -85,7 +84,7 @@ correctNumber();
 
 function numberUser() {
     let n = prompt('Введите число');
-    if (isNaN(n)) {
+    if (isNaN(n) || n == undefined || n.trim() === '') {
         console.log('Переданный параметр не является числом')
     }
     else {
@@ -101,27 +100,27 @@ numberUser();
 const circly1 = {
     raduis: 5,
     getArea: function () {
-        return console.log((this.raduis ** 2) * Math.PI);
+        return (this.raduis ** 2) * Math.PI;
     },
     getPerimeter: function () {
-        return console.log(2 * Math.PI * this.raduis);
+        return 2 * Math.PI * this.raduis;
     }
 }
 
 const circly2 = {
     raduis: 7,
     getArea: function () {
-        return console.log((this.raduis ** 2) * Math.PI);
+        return (this.raduis ** 2) * Math.PI;
     },
     getPerimeter: function () {
-        return console.log(2 * Math.PI * this.raduis);
+        return 2 * Math.PI * this.raduis;
     }
 }
 
-circly1.getArea();
-circly1.getPerimeter();
-circly2.getArea();
-circly2.getPerimeter();
+console.log(circly1.getArea());
+console.log(circly1.getPerimeter());
+console.log(circly2.getArea());
+console.log(circly2.getPerimeter());
 
 
 // Задание  8

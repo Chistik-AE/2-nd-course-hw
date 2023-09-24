@@ -40,16 +40,17 @@ const numberSquared2 = (e) => {
 numberSquared(6);
 console.log(numberSquared2(7));
 
+
 // Задание  4
 
 const userAge = () => {
     let f = prompt('Сколько вам лет?');
-    if (f > 12) {
-        alert('Добро пожаловать!');
+    if (isNaN(f) || !(f) || f.trim() === '' || f < 0) {
+        alert('Вы ввели неправильное значение');
     }
     else {
-        if (f < 0 || isNaN(f) || f == undefined || f.trim() === '') {
-            alert('Вы ввели неправильное значение');
+        if (f > 12) {
+            alert('Добро пожаловать!');
         }
         else {
             alert('Привет, друг!')
@@ -59,16 +60,18 @@ const userAge = () => {
 
 userAge();
 
+
+
 // Задание  5
 
 const correctNumber = () => {
     let g = prompt('Введите первое число');
     let h = prompt('Введите второе число');
-    if (isNaN(g) || g == undefined || g.trim() === '') {
+    if (isNaN(g) || !(g) || g.trim() === '') {
         return console.log('Одно или оба значения не являются числом');
     }
     else {
-        if (isNaN(h) || h == undefined || h.trim() === '') {
+        if (isNaN(h) || !(h) || h.trim() === '') {
             return console.log('Одно или оба значения не являются числом');
         }
         else {
@@ -84,7 +87,7 @@ correctNumber();
 
 function numberUser() {
     let n = prompt('Введите число');
-    if (isNaN(n) || n == undefined || n.trim() === '') {
+    if (isNaN(n) || !(n) || n.trim() === '') {
         console.log('Переданный параметр не является числом')
     }
     else {
@@ -147,4 +150,6 @@ const monthNumber = () => {
         return alert('Не верно. Такого номера месяца нет');
     };
 };
+
+
 

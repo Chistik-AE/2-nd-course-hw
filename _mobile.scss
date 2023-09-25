@@ -43,10 +43,38 @@
             padding: 32px 14px;
         }
     }
-    
 
+    .game-box {
+        height: 655px;
+    }
 
+    .game__seasons {
 
+        gap: 64px;
 
+        &_box {
+            align-items: center;
+        }
+
+        &_title {
+            text-align: center;
+            font-size: 32px;
+
+        }
+
+        &_text {
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+
+    }
+
+    .game__img {
+        width: 344px;
+        height: 236px;
+        flex-shrink: 0;
+    }
 
 }

@@ -36,23 +36,6 @@
   width: 481px;
   margin-bottom: 44px;
 }
-.top__button {
-  border-radius: 30px;
-  background: #9C0332;
-  width: 234.063px;
-  height: 48.603px;
-  flex-shrink: 0;
-  color: #FFF;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.top__button:hover {
-  background: #EB443F;
-  cursor: url(./clarity_cursor-hand-line.svg), pointer;
-}
 
 .play-box {
   background: #000915;
@@ -97,6 +80,61 @@
   border: 3px solid #44D2FF;
 }
 
+.button {
+  border-radius: 30px;
+  background: #9C0332;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button:hover {
+  background: #EB443F;
+  cursor: url(./clarity_cursor-hand-line.svg), pointer;
+}
+
+.game-box {
+  background: #000915;
+  height: 800px;
+  flex-shrink: 0;
+}
+
+.game__seasons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 135px;
+}
+.game__seasons_box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.game__seasons_title {
+  color: #FFF;
+  font-size: 48px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.game__seasons_text {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  width: 580px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -133,5 +171,29 @@
   }
   .play__name {
     padding: 32px 14px;
+  }
+  .game-box {
+    height: 655px;
+  }
+  .game__seasons {
+    gap: 64px;
+  }
+  .game__seasons_box {
+    align-items: center;
+  }
+  .game__seasons_title {
+    text-align: center;
+    font-size: 32px;
+  }
+  .game__seasons_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .game__img {
+    width: 344px;
+    height: 236px;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=style.css.map */

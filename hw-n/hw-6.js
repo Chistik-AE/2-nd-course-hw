@@ -1,5 +1,6 @@
+
 // Задание 1
-let array = [1, 5, 4, 10, 0, 3];
+const array = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; array[i - 1] != 10; i++) {
     console.log(array[i]);
@@ -7,21 +8,21 @@ for (let i = 0; array[i - 1] != 10; i++) {
 
 // Задание 2
 
-let array2 = [1, 5, 4, 10, 0, 3];
-let searchIndex = array2.indexOf(4);
+const array2 = [1, 5, 4, 10, 0, 3];
+const searchIndex = array2.indexOf(4);
 console.log(searchIndex);
 
 // Задание 3
 
-let array3 = [1, 3, 5, 10, 20];
-let arrayJoin = array3.join(' ');
+const array3 = [1, 3, 5, 10, 20];
+const arrayJoin = array3.join(' ');
 console.log(arrayJoin);
 
 // Задание 4
 
 let x = 3;
 let y = 3;
-let array4 = new Array();
+const array4 = [];
 
 for (let i = 0; i < x; i++) {
     array4[i] = new Array();
@@ -35,7 +36,7 @@ console.log(array4)
 
 // Задание 5
 
-let array5 = [1, 1, 1];
+const array5 = [1, 1, 1];
 
 array5.push(2);
 array5.push(2);
@@ -51,6 +52,7 @@ for (let i = 0; i < 3; i++) {
 console.log(array5);
 
 */
+
 
 // Задание 6
 

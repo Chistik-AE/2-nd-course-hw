@@ -20,9 +20,9 @@ const startsWith = (searchStart, search) => {
 
         }
     }
-    console.log(searchResult)
+    return searchResult;
 }
-startsWith(['яблоко', 'груша', 'гриб', 'огурец'], 'гру');
+console.log(startsWith(['яблоко', 'груша', 'гриб', 'огурец'], 'гру'));
 
 
 // Задание 3

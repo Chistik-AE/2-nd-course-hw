@@ -110,6 +110,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 135px;
+  justify-content: center;
 }
 .game__seasons_box {
   display: inline-flex;
